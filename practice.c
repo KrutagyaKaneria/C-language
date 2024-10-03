@@ -89,3 +89,14 @@ int main() {
 }
 
 note1-mostly constant store karne ke lleye use karte hai jaha by default value 0 thi agae series bdegi ya first innput ke  baad
+
+file*var :-to create a file
+var=fopen("path","r"); :- to open that file
+char str[200]; :-read kara huva kisi variable me store karne ke leye
+f(gets,size(200),var); :- it will read and store in var file
+fclose() :-file close thai jase
+a=append
+w=write
+r=read
+& :-adress madese
+* :- pointer ye file location me save hogi
