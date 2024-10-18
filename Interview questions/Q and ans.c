@@ -103,6 +103,63 @@ int main(){
     return 0;
 }
 
+9. Write a Program to Check if a number is an Armstrong number or not.
+
+12. Check whether a number is a palindrome.
+#include <stdio.h>
+int main() {
+    int num=153;
+    int reversed=0;
+    while(num!=0){ 
+        reversed=reversed*10+num%10;
+        num=num/10;
+    }
+    if(num==reversed){
+    printf("not a palindrome");
+    }
+    else{
+        printf("palindrome");
+    }
+    return 0;
+}
+13. Write a C Program to check if two numbers are equal without using the bitwise operator. 
+#include <stdio.h>
+int main(){
+    int num1=10;
+    int num2=10;
+    if(!(num1 ^ num2)){
+        printf("it is equal");
+    }
+    else{
+        printf("it is not equal");
+    }
+}
 
 
 
+14. Write a  C program to find the GCD of two numbers.#include <stdio.h>
+int main(){
+    int num1=98;
+    int num2=56;
+    int gcd;
+    for(int i=1;i<=num1 && i<=num2;i++){
+        if(num1%i==0 && num2%i==0){
+            gcd=i;
+        }
+    }
+    printf("%d",gcd);
+}
+15. Write a  C program to find the LCM of two numbers.
+#include <stdio.h>
+int main(){
+    int num1=12;
+    int num2=9;
+    int gcd;
+    for(int i=1;i<=num1 && i<=num2;i++){
+        if(num1%i==0 && num2%i==0){
+            gcd=i;
+        }
+    }
+int lcm=num1*num2/gcd;
+printf("%d",lcm);
+}
