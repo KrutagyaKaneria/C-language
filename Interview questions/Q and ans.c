@@ -18,7 +18,6 @@ int main(){
 }
 
 
-
 2. Write a Program to check whether a number is prime or not.
 #include <stdio.h>
 int main(){
@@ -62,4 +61,48 @@ int main(){
 
 
 5. Write a Program to Replace all 0’s with 1’s in a Number.
+
+6. Write a Program to convert the binary number into a decimal number.
+
+7.  Write a Program to check if the year is a leap year or not.
+#include <stdio.h>
+int main(){
+    int year=2008;
+    if((year%4==0 && year%100!=0) || year%400==0){
+        printf("it is a leap year");
+    }
+    else{
+        printf("it is not a leap year");
+    }
+}
+
+8. Write a program to Factorial of a Number.
+#include <stdio.h>
+int main(){
+    int num=5;
+    int fact=1;
+    for(int i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    printf("%d",fact);
+}
+
+--- using recursion
+
+#include <stdio.h>
+int factorial(int n){
+    if(n==0){
+        return 1;
+    }
+    return n*factorial(n-1);
+}
+
+int main(){
+    int num=5;
+    printf("%d",factorial(num));
+    return 0;
+}
+
+
+
 
