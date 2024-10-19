@@ -137,7 +137,8 @@ int main(){
 
 
 
-14. Write a  C program to find the GCD of two numbers.#include <stdio.h>
+14. Write a  C program to find the GCD of two numbers.
+#include <stdio.h>
 int main(){
     int num1=98;
     int num2=56;
@@ -163,3 +164,13 @@ int main(){
 int lcm=num1*num2/gcd;
 printf("%d",lcm);
 }
+18. Write a Program to find the area of a circle.
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int radius=2;
+    float PI=3.14;
+    float area =PI * pow(radius,2);
+    printf("%.2f",area);
+}
+
