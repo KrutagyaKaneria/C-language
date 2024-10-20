@@ -174,3 +174,48 @@ int main() {
     printf("%.2f",area);
 }
 
+
+
+22. Write a program to reverse an Array.
+#include <stdio.h>
+
+int main() {
+    int arr[]={ 1, 2, 3, 4, 5, 6, 7, 8 };
+    int len=sizeof(arr)/sizeof(arr[0]);
+    for(int i=len-1;i>=0;i--){
+        printf("%d",arr[i]);
+    }
+}
+
+23. Write a program to check the repeating elements in C.
+#include <stdio.h>
+int main() {
+    int arr[]={ 1, 3, 4, 1, 2, 3, 5, 5 };
+    int len=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<len;i++){
+        for(int j=i+1;j<len;j++){
+            if(arr[i]==arr[j]){
+                printf("%d",arr[i]);
+            }
+        }
+    }
+}
+
+24. Write a Program to print the Maximum and Minimum elements in an array.
+#include <stdio.h>
+int main() {
+    int arr[]={ 15, 14, 35, 2, 11, 83 };
+    int len=sizeof(arr)/sizeof(arr[0]);
+    int max=arr[0];
+    int min=arr[0];
+    for(int i=0;i<len;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+        else if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    printf("max:""%d\n",max);
+    printf("min:""%d",min);
+}
