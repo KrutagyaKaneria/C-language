@@ -572,29 +572,41 @@ int main () {
 32. Check Armstrong Number
 Write a program to check whether a given number is an Armstrong number.
 #include <stdio.h>
+#include <string.h>
 int main () {
-	int num = 153 ;
-	int num1 = 1 ;
-	int sum = 0 ;
-	char str[10] ; 
-	sprintf (str , "%d" , num);
-	int i ;
-	for (i = 0 ; i < strlen(str) ; i++ ) {
-		int j ;
-		num1 = 1 ;
-		for (j = 1 ; j <= strlen(str) ; j++ ) {
-			num1 = str[i] * num1 ;
-		}
-		sum = sum + num1 ;
-	}
-	if (sum == num) {
-		printf ("It is a Armstrong Number") ;
-	}
-	else {
-		printf ("It is not a Armstrog Number") ;
-	}
-	return 0 ;
+    int number,count=0,result=0,mul=1,cnt,rem;
+    printf("enter your number:");
+    scanf("%d",&number);
+    int q=number;
+    // To find len of the number
+    while (q!=0){
+        q=q/10;
+        count++;
+    }
+    // multiply ecan digit length times and add it 
+    cnt=count;
+    q=number;
+    while (q!=0){
+        rem=q%10;
+        while(cnt!=0){
+            mul=mul*rem;
+            cnt--;
+        }
+        result=result+mul;
+        cnt=count;
+        q=q/10;
+        mul=1;
+    }
+    // check number and sum is  equal or not
+    if(result==number){
+        printf("yes it is an armstrong number");
+    }
+    else{
+        printf("no it is not a armstrong number");
+    }
+    return 0;
 }
+
 
 33. Calculate the Average of Numbers in an Array
 Write a program to calculate the average of all the numbers in an array.

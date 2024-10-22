@@ -39,8 +39,18 @@ int main(){
 }
 
 3. Write a C program to calculate Compound Interest.
+#include <stdio.h>
+#include <math.h>
+int main(){
+    double principal=2300;
+    double  rate=7;
+    double time=4;
+    double amount = principal * ((pow((1 + rate / 100), time)));
+    double CI = amount-principal ;
+    printf("%1f",CI);
+    return 0;
 
-
+}
 
 4. Write a Program in C to Swap the values of two variables without using any extra variable.
 #include <stdio.h>
@@ -58,11 +68,17 @@ int main(){
     printf("%d",b);
     
 }
-
-
 5. Write a Program to Replace all 0’s with 1’s in a Number.
+#include <stdio.h>
+int main(){
+
+}
 
 6. Write a Program to convert the binary number into a decimal number.
+#include <stdio.h>
+int main(){
+
+}
 
 7.  Write a Program to check if the year is a leap year or not.
 #include <stdio.h>
@@ -104,6 +120,42 @@ int main(){
 }
 
 9. Write a Program to Check if a number is an Armstrong number or not.
+#include <stdio.h>
+#include <string.h>
+int main () {
+    int number,count=0,result=0,mul=1,cnt,rem;
+    printf("enter your number:");
+    scanf("%d",&number);
+    int q=number;
+    // To find len of the number
+    while (q!=0){
+        q=q/10;
+        count++;
+    }
+    // multiply ecan digit length times and add it 
+    cnt=count;
+    q=number;
+    while (q!=0){
+        rem=q%10;
+        while(cnt!=0){
+            mul=mul*rem;
+            cnt--;
+        }
+        result=result+mul;
+        cnt=count;
+        q=q/10;
+        mul=1;
+    }
+    // check number and sum is  equal or not
+    if(result==number){
+        printf("yes it is an armstrong number");
+    }
+    else{
+        printf("no it is not a armstrong number");
+    }
+    return 0;
+}
+
 
 12. Check whether a number is a palindrome.
 #include <stdio.h>
@@ -232,3 +284,4 @@ int main() {
     printf("max:""%d\n",max);
     printf("min:""%d",min);
 }
+
