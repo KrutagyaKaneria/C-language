@@ -156,6 +156,19 @@ int main () {
     return 0;
 }
 
+11. Write a Program to reverse a number.
+#include <stdio.h>
+int main(){
+    int N;
+    printf("enter number : ");
+    scanf("%d",&N);
+    int ans=0;
+    while(N!=0){
+        ans=ans*10+(N%10);
+        N=N/10;
+    }
+    printf("%d",ans);
+}
 
 12. Check whether a number is a palindrome.
 #include <stdio.h>
