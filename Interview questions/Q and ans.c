@@ -229,6 +229,17 @@ int main(){
 int lcm=num1*num2/gcd;
 printf("%d",lcm);
 }
+
+16. Write a C Program to find the Maximum and minimum of two numbers without using any loop or condition.
+#include <stdio.h>
+int main(){
+    int a=55;
+    int b=23;
+    printf("max = %d\n", ((a + b) + abs(a - b)) / 2);
+    printf("max = %d\n", ((a + b) - abs(a - b)) / 2);
+}
+
+
 18. Write a Program to find the area of a circle.
 #include <stdio.h>
 #include <math.h>
