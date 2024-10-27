@@ -239,6 +239,12 @@ int main(){
     printf("max = %d\n", ((a + b) - abs(a - b)) / 2);
 }
 
+17. Write a Program in C to Print all natural numbers up to N without using a semi-colon.
+int main(int val)
+{
+    if (val <= N && printf("%d ", val) && main(val + 1)) {
+    }
+}
 
 18. Write a Program to find the area of a circle.
 #include <stdio.h>
