@@ -119,8 +119,8 @@ int main(){
 }
 
 note1- int-4(6-7 digits) double-8(15 digits) long-8(15 digits) float-4(6-7 digits) 
-note2- un-signed - 0 se + value store kar sakte hai(0 to 256 digits ) 
-       signed - - se + value store kar sakte hai(-128 to 127 digits)
+note2- un-signed :- 0 se + value store kar sakte hai(0 to 256 digits ) 
+       signed :- - se + value store kar sakte hai(-128 to 127 digits)
 note3-%i for-    
       %F for-
 note4-rightshift leftshift & | ^
