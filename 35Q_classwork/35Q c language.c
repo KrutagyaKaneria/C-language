@@ -1,4 +1,3 @@
-
 1. Hello World Program
  Write a program to print "Hello, World!" on the screen.
 
@@ -117,18 +116,18 @@ int main() {
     int reversed=0;
     while(num!=0){ 
         reversed=reversed*10+num%10;
-        num=num/10;
+        num=(num-num%10)/10;
     }
     if(num==reversed){
-    printf("not a palindrome");
+    printf("palindrome");
     }
     else{
-        printf("palindrome");
+        printf(" not a palindrome");
     }
     return 0;
 }
 
-7(ii) Palindrome Check
+7.(ii) Palindrome Check
 Write a program to check whether a given number is a palindrome.
 #include <stdio.h>
 int main(){
@@ -142,7 +141,7 @@ char data[] = "abbba";
         data[len-2-i] = temp;
     }
 
-   printf("%d\n", !(strcmp(data, copy)));
+   printf("%d\n", !(strcmp(data,copy)));
    return 0;
 }
 

@@ -180,10 +180,10 @@ int main() {
         num=num/10;
     }
     if(num==reversed){
-    printf("not a palindrome");
+    printf(" palindrome");
     }
     else{
-        printf("palindrome");
+        printf("not a palindrome");
     }
     return 0;
 }
